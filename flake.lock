@@ -1433,11 +1433,11 @@
     },
     "secrets": {
       "locked": {
-        "lastModified": 1734432834,
-        "narHash": "sha256-SI2dw1T0H8OilJPFNDx2+1DdfSLxqgWbvFJr8ZgZjoE=",
+        "lastModified": 1735916909,
+        "narHash": "sha256-rVduU+EgdxFG9TjIjTILqRIG04HkQvL6mqivM8GIQ58=",
         "ref": "main",
-        "rev": "9d0c470e625f7a1a4b8bf49e4314fa5e3b696846",
-        "revCount": 4,
+        "rev": "4ba15cf8e40e9877fda9215ca24baf4507f1ea7f",
+        "revCount": 5,
         "type": "git",
         "url": "https://github.com/aka-raccoon/sfs"
       },
