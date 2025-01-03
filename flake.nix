@@ -83,6 +83,7 @@
         darwinConfigurations = {
           amb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "amb";
           cmb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "cmb";
+          pmb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "pmb";
         };
 
         ciSystems =
