@@ -81,9 +81,9 @@
           ley = mkSystemLib.mkNixosSystem "x86_64-linux" "ley";
         };
         darwinConfigurations = {
-          amb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "amb";
+          amb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "amb" [ "c4300n" ];
           cmb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "cmb";
-          pmb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "pmb";
+          pmb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "pmb" [ "trash-panda-v91-beta" ];
         };
 
         ciSystems =

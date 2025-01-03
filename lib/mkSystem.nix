@@ -1,7 +1,11 @@
-{ inputs, mkPkgsWithSystem, ... }:
+{
+  inputs,
+  mkPkgsWithSystem,
+  ...
+}:
 {
   mkNixosSystem =
-    system: hostname:
+    system: hostname: users:
     inputs.nixpkgs.lib.nixosSystem {
       inherit system;
       pkgs = mkPkgsWithSystem system;
@@ -23,7 +27,9 @@
             extraSpecialArgs = {
               inherit inputs hostname system;
             };
-            users.c4300n = ../. + "/homes/c4300n";
+            users = inputs.nixpkgs.lib.foldl' (
+              acc: user: acc // { "${user}" = ../. + "/homes/${user}"; }
+            ) { } users;
           };
         }
         ../hosts/_modules/common
@@ -31,12 +37,12 @@
         ../hosts/${hostname}
       ];
       specialArgs = {
-        inherit inputs hostname;
+        inherit inputs hostname users;
       };
     };
 
   mkDarwinSystem =
-    system: hostname:
+    system: hostname: users:
     inputs.nix-darwin.lib.darwinSystem {
       inherit system;
       pkgs = mkPkgsWithSystem system;
@@ -61,7 +67,9 @@
             extraSpecialArgs = {
               inherit inputs hostname system;
             };
-            users.c4300n = ../. + "/homes/c4300n";
+            users = inputs.nixpkgs.lib.foldl' (
+              acc: user: acc // { "${user}" = ../. + "/homes/${user}"; }
+            ) { } users;
           };
         }
         ../hosts/_modules/common
@@ -69,7 +77,7 @@
         ../hosts/${hostname}
       ];
       specialArgs = {
-        inherit inputs hostname;
+        inherit inputs hostname users;
       };
     };
 }

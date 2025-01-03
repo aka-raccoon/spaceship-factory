@@ -23,6 +23,6 @@
 
   # Your own overlays for stable nixpkgs should be declared here
   nixpkgs-overlays = final: prev: {
-    _1password-gui = prev._1password-gui.override { polkitPolicyOwners = [ "c4300n" ]; };
+    _1password-gui = prev._1password-gui.override { polkitPolicyOwners = inputs.nixpkgs.lib.users; };
   };
 }
