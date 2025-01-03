@@ -1,6 +1,5 @@
 {
   pkgs,
-  lib,
   config,
   inputs,
   hostname,
@@ -24,13 +23,6 @@
     security = {
       ssh = {
         enable = true;
-        matchBlocks = {
-          "asc.internal" = {
-            port = 22;
-            user = "thrash-panda-v91-beta";
-            forwardAgent = true;
-          };
-        };
       };
     };
 
