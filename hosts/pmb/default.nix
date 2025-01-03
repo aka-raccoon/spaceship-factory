@@ -8,7 +8,7 @@
 {
   config = {
     networking = {
-      computerName = "amb";
+      computerName = "pmb";
       hostName = hostname;
       localHostName = hostname;
     };
