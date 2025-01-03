@@ -19,45 +19,6 @@
         enable = true;
         makeDefaultEditor = true;
       };
-
-      vscode = {
-        userSettings = lib.importJSON ./config/editor/vscode/settings.json;
-        extensions =
-          let
-            inherit (inputs.nix-vscode-extensions.extensions.${pkgs.system}) vscode-marketplace;
-          in
-          with vscode-marketplace;
-          [
-            # Language support
-            golang.go
-            hashicorp.terraform
-            helm-ls.helm-ls
-            jnoortheen.nix-ide
-            mrmlnc.vscode-json5
-            ms-azuretools.vscode-docker
-            ms-python.python
-            redhat.ansible
-            redhat.vscode-yaml
-            tamasfe.even-better-toml
-
-            # Formatters
-            esbenp.prettier-vscode
-
-            # Linters
-            davidanson.vscode-markdownlint
-
-            # Remote development
-            ms-vscode-remote.remote-containers
-            ms-vscode-remote.remote-ssh
-
-            # Other
-            eamodio.gitlens
-            gruntfuggly.todo-tree
-            ionutvmi.path-autocomplete
-            ms-kubernetes-tools.vscode-kubernetes-tools
-            signageos.signageos-vscode-sops
-          ];
-      };
     };
 
     security = {
