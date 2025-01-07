@@ -13,11 +13,11 @@ in
 
   config = lib.mkIf cfg.enable {
 
-    home = {
-      sessionVariables = {
-        TERM = "xterm-256color";
-      };
-    };
+    # home = {
+    #   sessionVariables = {
+    #     XDG_DATA_DIRS = "\${XDG_DATA_DIRS}:$GHOSTTY_SHELL_INTEGRATION_XDG_DIR";
+    #   };
+    # };
     xdg.configFile."ghostty/config".source = ./config;
   };
 }
