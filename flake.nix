@@ -38,7 +38,7 @@
     };
 
     secrets = {
-      url = "git+https://github.com/aka-raccoon/sfs?ref=main";
+      url = "git+https://github.com/aka-raccoon/sfs?shallow=1";
     };
 
     stylix.url = "github:danth/stylix";
