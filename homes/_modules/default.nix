@@ -2,6 +2,7 @@
 {
   imports = [
     ./mutability.nix
+    ./secrets.nix
 
     ./browsers
     ./desktop

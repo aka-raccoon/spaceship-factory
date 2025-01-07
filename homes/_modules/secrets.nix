@@ -6,6 +6,7 @@
 }:
 let
   ageKeyFile = "${config.xdg.configHome}/age/keys.txt";
+  sshKey = "${config.home.homeDirectory}/.ssh/id_ed25519";
 in
 {
   config = {
@@ -16,8 +17,13 @@ in
 
     sops = {
       defaultSopsFile = inputs.secrets.file;
-      age.keyFile = ageKeyFile;
-      age.generateKey = true;
+      age = {
+        keyFile = ageKeyFile;
+        generateKey = true;
+        sshKeyPaths = [
+          sshKey
+        ];
+      };
 
       secrets = {
         atuin_key = { };
