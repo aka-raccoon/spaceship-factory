@@ -38,7 +38,7 @@
     };
 
     secrets = {
-      url = "git+https://github.com/aka-raccoon/sfs?shallow=1";
+      url = "git+ssh://git@github.com/aka-raccoon/sfs";
     };
 
     stylix.url = "github:danth/stylix";
