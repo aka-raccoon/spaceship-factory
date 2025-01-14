@@ -3,6 +3,7 @@
 }:
 {
   imports = [
+    ./aws
     ./atuin
     ./bat
     ./bash
