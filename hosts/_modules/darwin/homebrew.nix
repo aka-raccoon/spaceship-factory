@@ -15,14 +15,11 @@ _: {
     casks = [
       "1password"
       "ghostty"
-      "notion"
-      "notion-calendar"
       "raycast"
     ];
     masApps = {
       "1Password For Safari" = 1569813296;
       "Ghostery Privacy Ad Blocker" = 6504861501;
-      "Notion Web Clipper" = 1559269364;
       "Vimari" = 1480933944;
     };
   };

@@ -82,7 +82,7 @@
         };
         darwinConfigurations = {
           amb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "amb" [ "c4300n" ];
-          cmb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "cmb";
+          cmb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "cmb" [ "I572068" ];
           pmb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "pmb" [ "trash-panda-v91-beta" ];
         };
 

@@ -13,7 +13,13 @@
     homebrew = {
       taps = [ ];
       brews = [ ];
-      masApps = { };
+      casks = [
+        "notion"
+        "notion-calendar"
+      ];
+      masApps = {
+        "Notion Web Clipper" = 1559269364;
+      };
     };
   };
 }
