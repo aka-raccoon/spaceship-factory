@@ -3,5 +3,10 @@ _: {
     programs.yazi = {
       enable = true;
     };
+    programs.fish = {
+      shellAbbrs = {
+        yy = "yazi";
+      };
+    };
   };
 }
