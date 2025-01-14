@@ -16,6 +16,7 @@
     ./go-task
     ./starship
     ./utilities
+    ./uv
     ./zoxide
     ./yazi
   ];
