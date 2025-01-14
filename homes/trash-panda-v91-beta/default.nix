@@ -52,7 +52,15 @@
 
       go-task.enable = true;
     };
-
+    virtualisation = {
+      docker-cli = {
+        enable = true;
+      };
+      colima = {
+        enable = true;
+        startService = true;
+      };
+    };
     themes = {
       cyberdream = {
         enable = true;
