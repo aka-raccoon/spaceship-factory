@@ -26,7 +26,10 @@ in
   config = lib.mkMerge [
     (lib.mkIf cfg.enable {
       programs = {
-        gh.enable = true;
+        gh = {
+          enable = true;
+          extensions = [ pkgs.gh-copilot ];
+        };
         git = {
           enable = true;
 
