@@ -17,6 +17,10 @@ in
       type = lib.types.attrs;
       default = { };
     };
+    services = lib.mkOption {
+      type = lib.types.attrs;
+      default = { };
+    };
     includes = lib.mkOption {
       type = lib.types.listOf lib.types.attrs;
       default = [ ];
@@ -84,6 +88,7 @@ in
               nerdFontsVersion = 3;
               border = "rounded";
             };
+            inherit (cfg) services;
           };
         };
         fish = {
