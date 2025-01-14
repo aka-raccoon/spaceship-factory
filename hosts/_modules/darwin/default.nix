@@ -4,6 +4,7 @@
     ./homebrew.nix
     ./nix.nix
     ./os-defaults.nix
+    ./sops.nix
     ./users.nix
   ];
 
