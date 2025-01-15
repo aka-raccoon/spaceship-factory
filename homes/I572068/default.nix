@@ -27,9 +27,8 @@
       atuin = {
         enable = false;
       };
+      fish.enable = true;
     };
-
-    fish.enable = true;
 
     git = {
       enable = true;
