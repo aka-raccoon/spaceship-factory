@@ -28,18 +28,18 @@
         enable = false;
       };
       fish.enable = true;
-    };
 
-    git = {
-      enable = true;
-      inherit (inputs.secrets.corporate) username;
-      inherit (inputs.secrets.corporate) email;
-      services = {
-        inputs.secrets.corporate.gitUrl = "github:${inputs.secrets.corporate.gitUrl}";
+      git = {
+        enable = true;
+        inherit (inputs.secrets.corporate) username;
+        inherit (inputs.secrets.corporate) email;
+        services = {
+          inputs.secrets.corporate.gitUrl = "github:${inputs.secrets.corporate.gitUrl}";
+        };
       };
-    };
 
-    go-task.enable = true;
+      go-task.enable = true;
+    };
     virtualisation = {
       docker-cli = {
         enable = true;
