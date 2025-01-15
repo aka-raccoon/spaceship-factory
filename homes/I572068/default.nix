@@ -35,7 +35,7 @@
       inherit (inputs.secrets.corporate) username;
       inherit (inputs.secrets.corporate) email;
       services = {
-        inputs.secrets.corporate.services.gitUrl = "github:${inputs.secrets.corporate.services.gitUrl}";
+        inputs.secrets.corporate.gitUrl = "github:${inputs.secrets.corporate.gitUrl}";
       };
     };
 
