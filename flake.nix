@@ -41,7 +41,7 @@
       url = "git+ssh://git@github.com/aka-raccoon/sfs";
     };
 
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:danth/stylix/release-24.11";
   };
 
   outputs =
