@@ -18,6 +18,7 @@
     ./utilities
     ./uv
     ./zoxide
+    ./yamlfmt
     ./yazi
   ];
 }
