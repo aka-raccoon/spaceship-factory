@@ -11,7 +11,7 @@ _: {
       lockfiles = false; # Don't save lockfile (since running from anywhere)
     };
     taps = [ ];
-    brews = [ ];
+    brews = [ "posting" ];
     casks = [
       "1password"
       "ghostty"
