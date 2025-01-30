@@ -34,11 +34,12 @@
         inherit (inputs.secrets.corporate) username;
         inherit (inputs.secrets.corporate) email;
         services = {
-          inputs.secrets.corporate.gitUrl = "github:${inputs.secrets.corporate.gitUrl}";
+          "${inputs.secrets.corporate.gitUrl}" = "github:${inputs.secrets.corporate.gitUrl}";
         };
       };
 
       go-task.enable = true;
+      yamlfmt.enable = true;
     };
     virtualisation = {
       docker-cli = {
