@@ -20,6 +20,7 @@ in
         retain_line_breaks: true
         drop_merge_tag: true
         indentless_arrays: false
+        pad_line_comments: 2
     '';
   };
 }
