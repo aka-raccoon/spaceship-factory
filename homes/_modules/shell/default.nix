@@ -14,6 +14,7 @@
     ./fish
     ./git
     ./go-task
+    ./mods
     ./starship
     ./utilities
     ./uv
