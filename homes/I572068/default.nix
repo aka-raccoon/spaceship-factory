@@ -40,6 +40,7 @@
 
       go-task.enable = true;
       yamlfmt.enable = true;
+      yamllint.enable = true;
     };
     virtualisation = {
       docker-cli = {
