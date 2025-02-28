@@ -19,6 +19,7 @@
     ./uv
     ./zoxide
     ./yamlfmt
+    ./yamllint
     ./yazi
   ];
 }
