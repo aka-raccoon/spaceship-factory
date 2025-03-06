@@ -633,11 +633,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1740492189,
-        "narHash": "sha256-ulVWP6hjMT+aByXlqjaLSEywkfw8lbTwVg4K9J/j5f0=",
+        "lastModified": 1740614171,
+        "narHash": "sha256-6fWCR3TLTK39XNy6SDsW4L78VsmwIwi1sO5B8lq24vY=",
         "ref": "refs/heads/main",
-        "rev": "f0850905f0275922340035f62b6d808c2980ceda",
-        "revCount": 5843,
+        "rev": "d5920bc5da75b8eaf3476bc814bd46d225709788",
+        "revCount": 5849,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -986,11 +986,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1740396192,
-        "narHash": "sha256-ATMHHrg3sG1KgpQA5x8I+zcYpp5Sf17FaFj/fN+8OoQ=",
+        "lastModified": 1740547748,
+        "narHash": "sha256-Ly2fBL1LscV+KyCqPRufUBuiw+zmWrlJzpWOWbahplg=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "d9b69c3ec2a2e2e971c534065bdd53374bd68b97",
+        "rev": "3a05eebede89661660945da1f151959900903b6a",
         "type": "github"
       },
       "original": {
@@ -1103,11 +1103,11 @@
         "snacks-nvim": "snacks-nvim"
       },
       "locked": {
-        "lastModified": 1740430392,
-        "narHash": "sha256-Hn/jCQiDrhRXELZ8iQVY911FsYZC2uS1nhvZoCt7A1I=",
+        "lastModified": 1740680746,
+        "narHash": "sha256-pBWGjmPUzNfShhjZv6wzPH7KdmKIYJki/lAG7pzqOs4=",
         "owner": "aka-raccoon",
         "repo": "spacewim",
-        "rev": "de086559bd15284a842304d85890d68978f3990c",
+        "rev": "7642686c9052cbde03c9e2bbaa7b4747f40d0957",
         "type": "github"
       },
       "original": {
@@ -1471,11 +1471,11 @@
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {
-        "lastModified": 1740541830,
-        "narHash": "sha256-H7vsWGbvaylXy4qhRq0mkJyogmCf37Baq4dBvlb2nvY=",
+        "lastModified": 1740628241,
+        "narHash": "sha256-7yzmrdbrw7PzTAeWwEr+r5lmevbSuife4cOJl96Kv7w=",
         "owner": "budimanjojo",
         "repo": "talhelper",
-        "rev": "7380a168284f7c6985f528feb8e513d1823a6b86",
+        "rev": "e23e0e77e3c7c9fb08e0d783a11fa1d92227a70d",
         "type": "github"
       },
       "original": {
