@@ -78,7 +78,7 @@
 
       flake = {
         nixosConfigurations = {
-          ley = mkSystemLib.mkNixosSystem "x86_64-linux" "ley";
+          ley = mkSystemLib.mkNixosSystem "x86_64-linux" "ley" [ "c4300n" ];
         };
         darwinConfigurations = {
           amb = mkSystemLib.mkDarwinSystem "aarch64-darwin" "amb" [ "c4300n" ];
