@@ -22,5 +22,6 @@
     ./yamlfmt
     ./yamllint
     ./yazi
+    ./tmux
   ];
 }

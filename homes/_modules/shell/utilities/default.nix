@@ -16,7 +16,6 @@
       jo
       jq
       shcopy
-      tmux
       vim
       wget
       yq-go

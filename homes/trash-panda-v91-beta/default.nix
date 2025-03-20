@@ -53,6 +53,7 @@
       go-task.enable = true;
       yamlfmt.enable = true;
       yamllint.enable = true;
+      tmux.enable = true;
     };
     virtualisation = {
       docker-cli = {
