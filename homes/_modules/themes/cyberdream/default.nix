@@ -13,7 +13,11 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    home.packages = with pkgs; [ jetbrains-mono ];
+    home.packages = with pkgs; [
+      fira-code
+      jetbrains-mono
+      iosevka
+    ];
     fonts.fontconfig.enable = true;
 
     stylix = {
@@ -46,8 +50,8 @@ in
         };
 
         monospace = {
-          package = pkgs.iosevka-comfy.comfy;
-          name = "Iosevka Comfy";
+          package = pkgs.unstable.aporetic;
+          name = "JetBrains Mono";
         };
 
         emoji = {
