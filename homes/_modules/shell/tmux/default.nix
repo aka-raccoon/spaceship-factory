@@ -63,12 +63,6 @@ in
           bind -n M-k resize-pane -U
           bind -n M-j resize-pane -D
 
-          # Move window to the left
-          bind -n M-i swap-window -t -1
-
-          # Move window to the right
-          bind -n M-o swap-window -t +1
-
           # Use visual selection mode as vi
           bind-key -T copy-mode-vi v send-keys -X begin-selection
           bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle

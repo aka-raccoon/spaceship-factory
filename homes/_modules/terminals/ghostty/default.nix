@@ -112,11 +112,16 @@ in
       # Toggle pane zoom on Cmd+z in tmux it is Ctrl+b+z
       keybind = super+z=text:\x02\x7a
 
-      # Move tmux window to left on Cmd+i in tmux it is M-i (alt+i it is a custom keybind)
+      # Map super+c to alt+c
+      keybind = super+c=text:\x1bc
+
+      # Map super+i to alt+i
       keybind = super+i=text:\x1bi
 
-      #Move tmux window to right on Cmd+o in tmux it is M-o (alt+o it is a custom keybind)
-      keybind = super+o=text:\x1bo
+       # Map super+s to alt+s
+       keybind = super+s=text:\x1bs
+
+
     '';
   };
 }
