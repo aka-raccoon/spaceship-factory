@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./aerospace
     ./homebrew.nix
     ./nix.nix
     ./os-defaults.nix
