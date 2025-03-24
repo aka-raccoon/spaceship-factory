@@ -14,6 +14,7 @@ _: {
     brews = [ "posting" ];
     casks = [
       "1password"
+      "homerow"
       "ghostty"
       "raycast"
     ];
