@@ -53,6 +53,7 @@ in
 
           set-window-option -g pane-base-index 1
           set-option -g renumber-windows on
+          set -sg escape-time 0
 
           # kill pane
           bind-key x kill-pane
