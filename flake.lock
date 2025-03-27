@@ -972,11 +972,11 @@
         "snacks-nvim": "snacks-nvim"
       },
       "locked": {
-        "lastModified": 1742666219,
-        "narHash": "sha256-KoUu7bN+T1TgNT00F5eEtly0pF7a0p4/9ENXNSeJ4jo=",
+        "lastModified": 1743115035,
+        "narHash": "sha256-A4+4FmutztyYBWKjEr+i1Hrp+mICHaNSQJk+zBA5njQ=",
         "owner": "aka-raccoon",
         "repo": "spacewim",
-        "rev": "69591ebf83d66e75f0b330bbedf7be8daf0d8eaf",
+        "rev": "0503fadaf2c82eb8dd7567da495c36e259478d14",
         "type": "github"
       },
       "original": {
