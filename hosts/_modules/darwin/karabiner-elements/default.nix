@@ -11,8 +11,8 @@ in
     enable = lib.mkEnableOption "karabiner-elements";
   };
   config = lib.mkIf cfg.enable {
-    services.karabiner-elements = {
-      enable = true;
-    };
+    homebrew.casks = [
+      "karabiner-elements"
+    ];
   };
 }
