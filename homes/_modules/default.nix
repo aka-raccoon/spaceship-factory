@@ -8,7 +8,7 @@
     ./desktop
     ./deployment
     ./editor
-    ./karabiner-elements
+    ./karabiner-config
     ./kbs
     ./kubernetes
     ./security

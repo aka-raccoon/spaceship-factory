@@ -19,6 +19,7 @@
       };
     };
 
+    karabiner-config.enable = true;
     security = {
       ssh = {
         enable = true;
