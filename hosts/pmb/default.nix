@@ -10,6 +10,7 @@
       localHostName = hostname;
     };
 
+    modules.karabiner-elements.enable = true;
     homebrew = {
       taps = [ ];
       brews = [ ];

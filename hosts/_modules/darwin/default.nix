@@ -2,6 +2,7 @@
 {
   imports = [
     ./aerospace
+    ./karabiner-elements
     ./homebrew.nix
     ./nix.nix
     ./os-defaults.nix

@@ -11,9 +11,6 @@
         enable = false;
       };
     };
-    karabiner-elements = {
-      enable = false;
-    };
     security._1password.enable = true;
     kubernetes = {
       enable = true;
