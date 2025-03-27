@@ -24,7 +24,7 @@
         enable = true;
       };
     };
-
+    raycast.enable = true;
     shell = {
       atuin = {
         enable = true;

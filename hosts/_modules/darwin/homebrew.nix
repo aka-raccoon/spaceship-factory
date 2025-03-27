@@ -16,7 +16,6 @@ _: {
       "1password"
       "homerow"
       "ghostty"
-      "raycast"
     ];
     masApps = {
       "1Password For Safari" = 1569813296;

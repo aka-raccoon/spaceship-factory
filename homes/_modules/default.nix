@@ -12,6 +12,7 @@
     ./kbs
     ./kubernetes
     ./security
+    ./raycast
     ./shell
     ./terminals
     ./themes
