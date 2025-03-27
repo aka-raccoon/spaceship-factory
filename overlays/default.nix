@@ -16,16 +16,24 @@
       config.allowUnfree = true;
       overlays = [
         # overlays of unstable packages are declared here
-        (final: prev: { })
+        # (final: prev: { })
       ];
     };
   };
 
-  # Your own overlays for stable nixpkgs should be declared here
   nixpkgs-overlays = final: prev: {
     _1password-gui = prev._1password-gui.override { polkitPolicyOwners = inputs.nixpkgs.lib.users; };
+    # services.karabiner-elements is broken after Karabiner-Elements v15.0
+    # https://github.com/LnL7/nix-darwin/issues/1041
+    karabiner-elements = prev.karabiner-elements.overrideAttrs (oldAttrs: {
+      version = "14.13.0";
+      src = prev.fetchurl {
+        inherit (oldAttrs.src) url;
+        hash = "sha256-gmJwoht/Tfm5qMecmq1N6PSAIfWOqsvuHU8VDJY8bLw=";
+      };
+    });
     tmuxPlugins = prev.tmuxPlugins // {
-      catppuccin = prev.tmuxPlugins.catppuccin.overrideAttrs (oldAttrs: rec {
+      catppuccin = prev.tmuxPlugins.catppuccin.overrideAttrs (oldAttrs: {
         postInstall =
           (oldAttrs.postInstall or "")
           + ''
