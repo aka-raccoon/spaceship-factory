@@ -27,10 +27,6 @@
 
     nixvim.url = "github:aka-raccoon/spacewim";
 
-    nix-inspect = {
-      url = "github:bluskript/nix-inspect";
-    };
-
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
     talhelper = {
