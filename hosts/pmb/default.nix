@@ -9,17 +9,15 @@
       hostName = hostname;
       localHostName = hostname;
     };
-
+    modules.aerospace.enable = true;
     modules.karabiner-elements.enable = true;
     homebrew = {
       taps = [ ];
       brews = [ ];
       casks = [
         "notion"
-        "notion-calendar"
       ];
       masApps = {
-        "Notion Web Clipper" = 1559269364;
       };
     };
   };
