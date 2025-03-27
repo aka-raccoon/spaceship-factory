@@ -15,7 +15,6 @@
       gum
       jo
       jq
-      shcopy
       vim
       wget
       yq-go

@@ -6,7 +6,6 @@
   ...
 }@_inputs:
 {
-  shcopy = pkgs.callPackage ./shcopy.nix { };
   karabiner-config = pkgs.callPackage ./karabiner-config { };
   talhelper = inputs.talhelper.packages.${pkgs.system}.default;
 }
