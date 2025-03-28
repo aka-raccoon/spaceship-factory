@@ -4,8 +4,9 @@
   inputs,
   pkgs ? import <nixpkgs> { },
   ...
-}@_inputs:
+}:
 {
   karabiner-config = pkgs.callPackage ./karabiner-config { };
+  vifari = pkgs.callPackage ./vifari { };
   talhelper = inputs.talhelper.packages.${pkgs.system}.default;
 }

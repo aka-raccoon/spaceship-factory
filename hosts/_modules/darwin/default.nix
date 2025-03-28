@@ -8,6 +8,7 @@
     ./os-defaults.nix
     ./sops.nix
     ./users.nix
+    ./hammerspoon
   ];
 
   system = {

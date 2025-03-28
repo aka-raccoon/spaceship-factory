@@ -9,8 +9,11 @@
       hostName = hostname;
       localHostName = hostname;
     };
-    modules.aerospace.enable = true;
-    modules.karabiner-elements.enable = true;
+    modules = {
+      aerospace.enable = true;
+      karabiner-elements.enable = true;
+      hammerspoon.enable = true;
+    };
     homebrew = {
       taps = [ ];
       brews = [ ];

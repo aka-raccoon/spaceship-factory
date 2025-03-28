@@ -20,6 +20,7 @@
     };
 
     karabiner-config.enable = true;
+    hammerspoon-config.enable = true;
     security = {
       ssh = {
         enable = true;

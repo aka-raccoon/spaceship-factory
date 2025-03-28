@@ -8,6 +8,7 @@
     ./desktop
     ./deployment
     ./editor
+    ./hammerspoon-config
     ./karabiner-config
     ./kbs
     ./kubernetes
