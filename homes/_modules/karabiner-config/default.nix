@@ -16,6 +16,7 @@ in
     home.packages = with pkgs; [ karabiner-config ];
     xdg.configFile."karabiner/karabiner.json" = {
       source = "${pkgs.karabiner-config}/karabiner.json";
+      force = true;
     };
   };
 }
